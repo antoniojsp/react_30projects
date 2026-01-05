@@ -10,7 +10,7 @@ function App() {
     <div className='min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col'>
       <header className='border-b py-4'>
         <div className='container mx-auto px-4'>
-          <h1 className='text-2xl font-bold'>
+          <h1 className='text-2xl font-bold pb-10'>
             30 React Machine Coding Projects
           </h1>
         </div>
