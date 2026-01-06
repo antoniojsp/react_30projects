@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './components/projects/counter'
 import ClickOutsideDropDown from './components/projects/dropDown'
-
+import InlineEditable from './components/projects/inlineEditable'
 function App() {
 
   return (
@@ -18,7 +18,8 @@ function App() {
       </header>
       <main>
         {/* <Counter /> */}
-        <ClickOutsideDropDown />
+        {/* <ClickOutsideDropDown /> */}
+        <InlineEditable />
       </main>
     </div>
   )

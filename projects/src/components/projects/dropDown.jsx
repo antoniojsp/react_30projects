@@ -20,7 +20,6 @@ export default function ClickOutsideDropDown() {
             // if true, add a listener and check for mousedown, if detected, trigger the handle
             // which check if evemt was dont inside or outside the dropdown
             const handleClickOutside = (event) => {
-                console.log(event.target, dropDownRef.current)
                 if(dropDownRef.current && !dropDownRef.current.contains(event.target)){
                     setIsOpen(false);
                 }
@@ -34,6 +33,10 @@ export default function ClickOutsideDropDown() {
 
         }, [isOpen] // check for true or false
     )
+
+    const printOption = (value) =>{
+        console.log(value);
+    }
 
     return <div>
         <div className="flex flex-col pt-[150px] justify-center bg-gray-50">
@@ -51,11 +54,15 @@ export default function ClickOutsideDropDown() {
                         <div className="absolute mt-2 w-full rounded-md border bg-background z-10 shadow-lg">
                             <div className="py-1">
                                 {
-                                    ["Option 1", "Option 2", "Option 3"].map(
-                                        (option, index) => <button key={index} className="block w-full px-4 py-2 text-left 
-                                                                                          text-sm hover:bg-muted">
-                                                                                            {option}
-                                                                                          </button>  
+                                    ["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"].map(
+                                        (option, index) => <button 
+                                                                key={index} 
+                                                                className="block w-full px-4 py-2 text-left 
+                                                                          text-sm hover:bg-muted"
+                                                                onClick={() => printOption(option)}
+                                                                          >
+                                                                {option}
+                                                            </button>  
                                     )
                                 }
                             </div>
