@@ -8,16 +8,14 @@ export default function OtpInput() {
     const [otp, setOtp] = useState(Array(OTP_LENGTH).fill(""));
 
     const handleOtpChange = (index, value) =>{
-        console.log(index, value)
-
         setOtp(
-            (prev, i) => prev.map(
-                index === i ? value:0
+            (prev) => prev.map(
+                (item, i) => i === index ? value:item
             ) 
         )
     } 
 
-
+    console.log(otp)
     return <div className="flex flex-col pt-[150px] justify-center bg-gray-50">
         <h1>OTP input</h1>
         <div className="flex mt-10 mb-5 justify-center gap-2">
