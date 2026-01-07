@@ -8,6 +8,12 @@ export default function OtpInput() {
     const [otp, setOtp] = useState(Array(OTP_LENGTH).fill(""));
 
     const handleOtpChange = (index, value) =>{
+        console.log(typeof value);
+        const val = parseInt(value);
+        if(isNaN(val)){
+            return;
+        }
+
         setOtp(
             (prev) => prev.map(
                 (item, i) => i === index ? value:item
@@ -37,7 +43,7 @@ export default function OtpInput() {
 
         </div>
         <Button
-            disabled={otp.some((digit) => digit === " ")}
+            disabled={otp.some((digit) => digit === "")}
         >
             Verify
         </Button>
