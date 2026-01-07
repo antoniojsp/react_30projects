@@ -1,10 +1,12 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './components/projects/counter'
 import ClickOutsideDropDown from './components/projects/dropDown'
 import InlineEditable from './components/projects/inlineEditable'
+import TemperatureConverter from './components/projects/temperatureConverter'
+import MilesToKilometers from './components/projects/milesKIlometers'
+import OtpInput from './components/projects/otp-input'
+
 function App() {
 
   return (
@@ -19,7 +21,10 @@ function App() {
       <main>
         {/* <Counter /> */}
         {/* <ClickOutsideDropDown /> */}
-        <InlineEditable />
+        {/* <InlineEditable /> */}
+        {/* <TemperatureConverter /> */}
+        {/* <MilesToKilometers /> */}
+        <OtpInput />
       </main>
     </div>
   )
