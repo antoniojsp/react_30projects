@@ -6,6 +6,8 @@ import InlineEditable from './components/projects/inlineEditable'
 import TemperatureConverter from './components/projects/temperatureConverter'
 import MilesToKilometers from './components/projects/milesKIlometers'
 import OtpInput from './components/projects/otp-input'
+import ValidateForm from './components/projects/validateForm'
+
 
 function App() {
 
@@ -24,7 +26,8 @@ function App() {
         {/* <InlineEditable /> */}
         {/* <TemperatureConverter /> */}
         {/* <MilesToKilometers /> */}
-        <OtpInput />
+        {/* <OtpInput /> */}
+        <ValidateForm />
       </main>
     </div>
   )
