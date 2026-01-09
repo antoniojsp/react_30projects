@@ -14,8 +14,8 @@ function App() {
   return (
     <div className='min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col'>
       <header className='border-b py-4'>
-        <div className='container mx-auto px-4'>
-          <h1 className='text-2xl font-bold pb-10'>
+        <div className='container mx-auto px-2'>
+          <h1 className='text-2xl font-bold pb-0'>
             30 React Machine Coding Projects
           </h1>
         </div>
@@ -27,7 +27,7 @@ function App() {
         {/* <TemperatureConverter /> */}
         {/* <MilesToKilometers /> */}
         {/* <OtpInput /> */}
-        <ValidateForm />
+        {/* <ValidateForm /> */}
       </main>
     </div>
   )
