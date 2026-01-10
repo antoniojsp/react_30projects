@@ -7,7 +7,8 @@ import TemperatureConverter from './components/projects/temperatureConverter'
 import MilesToKilometers from './components/projects/milesKIlometers'
 import OtpInput from './components/projects/otp-input'
 import ValidateForm from './components/projects/validateForm'
-
+import AnimatedCardFlio from './components/projects/animatedFlipCard'
+import CustomTabs from './components/projects/custom-tabs'
 
 function App() {
 
@@ -28,6 +29,8 @@ function App() {
         {/* <MilesToKilometers /> */}
         {/* <OtpInput /> */}
         {/* <ValidateForm /> */}
+        {/* <AnimatedCardFlio /> */}
+        <CustomTabs />
       </main>
     </div>
   )

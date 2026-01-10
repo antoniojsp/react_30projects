@@ -1,4 +1,4 @@
-
+import "./flip-card.css"
 
 
 export default function AnimatedCardFlio() {
@@ -13,12 +13,12 @@ export default function AnimatedCardFlio() {
                     <div className="flip-card-inner">
                         <div className="flip-card-front">
                             <h3 className="flip-card-title">
-                                Front Side 
+                                Front Side
                             </h3>
                         </div>
                         <div className="flip-card-back">
-                            <h3 className="flip-card-back">
-                                <h3 className="flip-card-title =">Back Side</h3>
+                            <h3 className="flip-card-title =">
+                                Back Side
                             </h3>
                         </div>
                     </div>
