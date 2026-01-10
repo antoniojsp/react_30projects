@@ -9,7 +9,7 @@ import OtpInput from './components/projects/otp-input'
 import ValidateForm from './components/projects/validateForm'
 import AnimatedCardFlio from './components/projects/animatedFlipCard'
 import CustomTabs from './components/projects/custom-tabs'
-
+import FlattedArray from './components/projects/flat-array'
 function App() {
 
   return (
@@ -30,7 +30,8 @@ function App() {
         {/* <OtpInput /> */}
         {/* <ValidateForm /> */}
         {/* <AnimatedCardFlio /> */}
-        <CustomTabs />
+        {/* <CustomTabs /> */}
+        <FlattedArray />
       </main>
     </div>
   )
