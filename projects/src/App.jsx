@@ -10,6 +10,10 @@ import ValidateForm from './components/projects/validateForm'
 import AnimatedCardFlio from './components/projects/animatedFlipCard'
 import CustomTabs from './components/projects/custom-tabs'
 import FlattedArray from './components/projects/flat-array'
+import FlattenObjectInspector from './components/projects/flatten-object-inspector'
+
+
+
 function App() {
 
   return (
@@ -31,7 +35,8 @@ function App() {
         {/* <ValidateForm /> */}
         {/* <AnimatedCardFlio /> */}
         {/* <CustomTabs /> */}
-        <FlattedArray />
+        {/* <FlattedArray /> */}
+        <FlattenObjectInspector />
       </main>
     </div>
   )
