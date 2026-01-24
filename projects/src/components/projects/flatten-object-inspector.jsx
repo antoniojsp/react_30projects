@@ -22,6 +22,7 @@ export default function FlattenObjectInspector(){
         try{
             const parsedresult = JSON.parse(input);
             const flatRes = flattenObject(parsedresult);
+            console.log(flatRes)
             setFlatten(flatRes)
         }catch(e){
             console.log(e)

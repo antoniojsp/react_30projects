@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Counter from './components/projects/counter'
-import ClickOutsideDropDown from './components/projects/dropDown'
+import ClickOutsideDropDown from './components/projects/3-close_outside_click'
 import InlineEditable from './components/projects/inlineEditable'
 import TemperatureConverter from './components/projects/temperatureConverter'
 import MilesToKilometers from './components/projects/milesKIlometers'
@@ -11,8 +11,7 @@ import AnimatedCardFlio from './components/projects/animatedFlipCard'
 import CustomTabs from './components/projects/custom-tabs'
 import FlattedArray from './components/projects/flat-array'
 import FlattenObjectInspector from './components/projects/flatten-object-inspector'
-
-
+import KeyboardModal from './components/projects/11-keyboard-modal'
 
 function App() {
 
@@ -36,7 +35,8 @@ function App() {
         {/* <AnimatedCardFlio /> */}
         {/* <CustomTabs /> */}
         {/* <FlattedArray /> */}
-        <FlattenObjectInspector />
+        {/* <FlattenObjectInspector /> */}
+        <KeyboardModal />
       </main>
     </div>
   )
