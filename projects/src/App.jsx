@@ -12,6 +12,7 @@ import CustomTabs from './components/projects/custom-tabs'
 import FlattedArray from './components/projects/flat-array'
 import FlattenObjectInspector from './components/projects/flatten-object-inspector'
 import KeyboardModal from './components/projects/11-keyboard-modal'
+import DeepClone from './components/projects/12-deep-clone'
 
 function App() {
 
@@ -36,7 +37,8 @@ function App() {
         {/* <CustomTabs /> */}
         {/* <FlattedArray /> */}
         {/* <FlattenObjectInspector /> */}
-        <KeyboardModal />
+        {/* <KeyboardModal /> */}
+        <DeepClone />
       </main>
     </div>
   )
