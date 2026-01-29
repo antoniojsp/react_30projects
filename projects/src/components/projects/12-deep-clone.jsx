@@ -39,8 +39,6 @@ export default function DeepClone() {
         setCloned(null)
     }
 
-
-
     return (
         <div className="flex flex-col pt-[150px] justify-center bg-gray-50">
             <h1>Deep Clone</h1>
