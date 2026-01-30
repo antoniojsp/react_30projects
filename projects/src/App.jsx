@@ -13,6 +13,9 @@ import FlattedArray from './components/projects/flat-array'
 import FlattenObjectInspector from './components/projects/flatten-object-inspector'
 import KeyboardModal from './components/projects/11-keyboard-modal'
 import DeepClone from './components/projects/12-deep-clone'
+import ProductList from './components/projects/13-product-list'
+import ProductProvider from './context/product-context'
+import KanbanBoard from './components/projects/14-kanban-board'
 
 function App() {
 
@@ -38,7 +41,11 @@ function App() {
         {/* <FlattedArray /> */}
         {/* <FlattenObjectInspector /> */}
         {/* <KeyboardModal /> */}
-        <DeepClone />
+        {/* <DeepClone /> */}
+        {/* <ProductProvider>
+          <ProductList/>
+        </ProductProvider> */}
+        <KanbanBoard />
       </main>
     </div>
   )
