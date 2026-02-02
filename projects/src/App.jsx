@@ -16,6 +16,7 @@ import DeepClone from './components/projects/12-deep-clone'
 import ProductList from './components/projects/13-product-list'
 import ProductProvider from './context/product-context'
 import KanbanBoard from './components/projects/14-kanban-board'
+import StringCompression from './components/projects/15.string-compression'
 
 function App() {
 
@@ -45,7 +46,8 @@ function App() {
         {/* <ProductProvider>
           <ProductList/>
         </ProductProvider> */}
-        <KanbanBoard />
+        {/* <KanbanBoard /> */}
+        <StringCompression />
       </main>
     </div>
   )
