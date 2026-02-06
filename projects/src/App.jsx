@@ -17,6 +17,7 @@ import ProductList from './components/projects/13-product-list'
 import ProductProvider from './context/product-context'
 import KanbanBoard from './components/projects/14-kanban-board'
 import StringCompression from './components/projects/15.string-compression'
+import DebounceSearchWithApiCall from './components/projects/16.debounce-search'
 
 function App() {
 
@@ -47,7 +48,8 @@ function App() {
           <ProductList/>
         </ProductProvider> */}
         {/* <KanbanBoard /> */}
-        <StringCompression />
+        {/* <StringCompression /> */}
+        <DebounceSearchWithApiCall />
       </main>
     </div>
   )
