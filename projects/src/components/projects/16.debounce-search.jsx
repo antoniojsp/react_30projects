@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { useEffect, useRef, useState } from "react";
 
 const useDebounce = (value, delay) => {
-    const [debounceValue, setDebounceDelay] = useState(value);
+    const [debounceValue, setDebounceValue] = useState(value);
     const handler = useRef();
 
     useEffect(() => {
@@ -12,11 +12,12 @@ const useDebounce = (value, delay) => {
         }
 
         handler.current = setTimeout(() => {
-            setDebounceDelay(value)
+            setDebounceValue(value)
         }, delay)
 
         return () => clearTimeout(handler.current)
     }, [value, delay])
+
     return debounceValue
 }
 
@@ -28,14 +29,13 @@ export default function DebounceSearchWithApiCall() {
 
     const debounceTerm = useDebounce(searchTerm, 500)
 
-    async function fetchData() {
+    async function fetchData(term) {
         setIsLoading(true)
         try {
-            const data = await fetch(`https://dummyjson.com/products/search?q=${debounceTerm}`)
+            const data = await fetch(`https://dummyjson.com/products/search?q=${term}`)
             const result = await data.json()
             if (result?.products) {
                 setResults(result?.products)
-                console.log(result)
             }else{
                 setResults([]);
             }
@@ -54,8 +54,7 @@ export default function DebounceSearchWithApiCall() {
         fetchData(debounceTerm);
 
     }, [debounceTerm])
-    // console.log(searchTerm)
-// console.log(debounceTerm)
+ 
     return (
         <div className="flex flex-col pt-[150px] justify-center bg-gray-50">
             <h1>Debouce Search With API Call</h1>
